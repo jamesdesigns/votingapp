@@ -46,8 +46,8 @@ if(chartContainer) {
     // Enable pusher logging - don't include this in production
     Pusher.logToConsole = true;
 
-    var pusher = new Pusher('4bc8ef10221bac6c9838', {
-        cluster: 'us2'
+    var pusher = new Pusher('', {
+        cluster: ''
     });
 
     var channel = pusher.subscribe('fed-poll');
