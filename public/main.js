@@ -24,7 +24,7 @@ let dataPoints = [
     { label: 'Doug', y: 0 },
     { label: 'Cristin', y: 0 },
     { label: 'Caleb', y: 0 }
-]
+];
 
 const chartContainer = document.querySelector('#chartContainer')
 if(chartContainer) {
@@ -55,11 +55,11 @@ if(chartContainer) {
        dataPoints = dataPoints.map(x => {
            if(x.label == data.fed) {
                 x.y += data.points
-                return x
+                return x;
            } else {
-               return x
+               return x;
            }
        })
-       chart.render()
+       chart.render();
     });
 }

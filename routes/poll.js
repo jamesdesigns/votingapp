@@ -17,10 +17,10 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     pusher.trigger('fed-poll', 'fed-vote', {
         points: 1,
-        fed: req.body.vote
+        fed: req.body.fed
       });
 
       return res.json({ success: true, message: 'Thank you for voting' })
 })
 
-module.exports = router
+module.exports = router;
